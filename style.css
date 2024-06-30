@@ -61,18 +61,16 @@ body {
 }
 
 .input-container{
-    border: 8px;
-    color: var(--grey-darker);
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 8px;
+    border: 1px solid var(--grey-darker);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
 }
 
 .message-input-container{
-    border-radius: 8px;
-    color: var(--grey-darker);
+    border: 1px solid var(--grey-darker);
     padding-top: 12px;
     padding-bottom: 42px;
     padding-left: 12px;
@@ -93,7 +91,7 @@ body {
     */
 
 .query-type-option-container {
-    border: 1px solid black;    
+    border: 1px solid var(--grey-darker);    
     /* linia asta de jos face ca cele 2 div-uri sa ocupe cate jumatate din spatiul disponibil */
     flex: 1;
     padding-top: 12px;
@@ -117,4 +115,41 @@ body {
     .pc-containter{
         display: flex;
     }
+
+    .section-container{
+        max-width: 1024px;
+    }
+
+    .universal-container{
+        display: flex;
+        flex: 1;
+    }
+
+    .pc-query-type-option-container{
+        flex: 1;
+        display: flex;
+        margin-right: 8px;
+    }
+
+    .pc-button-class{
+        margin-left: 80px;
+    }
+
+    .pc-input-container{
+        border: 1px solid var(--grey-darker);
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 62px;
+        padding-right: 42px;
+        border-radius: 8px;
+    }
+
+    .pc-universal-container{
+        margin-top: 8px;
+    }
+
+    .pc-section-container{
+        margin-left: 28px;
+    }
+
 }

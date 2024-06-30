@@ -13,22 +13,22 @@
     <section class="section-container">
         <div class="table-container">
   
-          <h1>Contact Us</h1>
+          <h1 class="pc-universal-container">Contact Us</h1>
   
-          <div class="first universal-container pc-containter">
+          <div class="first universal-container ">
 
-            <div>
+            <div class="name-container pc-query-type-option-container">
                 <label>First Name<span class="span-container"> * </span>
-                    <div>
-                        <input class="input-container" type="text" name="nume">
+                    <div class="pc-universal-container">
+                        <input class="input-container pc-input-container" type="text" name="nume">
                     </div>
                 </label>
             </div>
               
-            <div class="last">
+            <div class="last pc-query-type-option-container">
                 <label>Last Name<span class="span-container"> * </span>
-                    <div>
-                        <input class="input-container" type="text" name="nume">
+                    <div class="pc-universal-container">
+                        <input class="input-container pc-input-container" type="text" name="nume">
                     </div>
                     
                 </label>
@@ -38,42 +38,46 @@
   
           <div class="universal-container">
               <label>Email Address<span class="span-container"> * </span>
-                <div>
-                    <input class="input-container" type="text" name="nume">
+                <div class="pc-universal-container">
+                    <input class="input-container pc-input-container" type="text" name="nume">
                 </div>
               </label>
           </div>
   
           <fieldset class="universal-container">
               <legend>Query type <span class="span-container"> * </span></legend>
-          
-              <div class="query-type-options universal-container">
-                  <div class="query-type-option-container">
-                      <input type="radio" id="kraken" name="monster" value="K" />
-                      <label for="kraken">General Enquiry</label>
-                  </div>
-      
-                  <div class="query-type-option-container universal-container">
-                      <input type="radio" id="sasquatch" name="monster" value="S" />
-                      <label for="sasquatch">Support Request</label>
-                  </div>
+
+              <div class="pc-query-type-option-container">
+                <div class="query-type-options pc-query-type-option-container">
+                    <div class="query-type-option-container pc-query-type-option-container universal-container">
+                        <input type="radio" id="kraken" name="monster" value="K" />
+                        <label for="kraken">General Enquiry</label>
+                    </div>
+        
+                    <div class="query-type-option-container universal-container">
+                        <input type="radio" id="sasquatch" name="monster" value="S" />
+                        <label for="sasquatch">Support Request</label>
+                    </div>
+                </div>
               </div>
+
             </fieldset>
   
           <div class="universal-container">
               <label>Message<span class="span-container"> * </span>
                 <div>
-                    <input class="message-input-container" type="text" name="nume">
+                    <input class="message-input-container pc-message-input-container universal-container" 
+                    type="text" name="nume">
                 </div>
               </label>
           </div>
   
           <div class="universal-container last-container">
-              <input class="last-input-container" type="checkbox" />
+              <input class="last-input-container " type="checkbox" />
               <p>I consent to being contacted by the team <span class="span-container"> * </span> </p>
           </div>
   
-          <button class="button-class universal-container">Submit</button>
+          <button class="button-class universal-container pc-button-class">Submit</button>
   
       </div>
     </section>
