@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="section-container">
+        <div class="table-container">
+  
+          <h1>Contact Us</h1>
+  
+          <div class="first universal-container pc-containter">
+
+            <div>
+                <label>First Name<span class="span-container"> * </span>
+                    <div>
+                        <input class="input-container" type="text" name="nume">
+                    </div>
+                </label>
+            </div>
+              
+            <div class="last">
+                <label>Last Name<span class="span-container"> * </span>
+                    <div>
+                        <input class="input-container" type="text" name="nume">
+                    </div>
+                    
+                </label>
+            </div>
+
+          </div>
+  
+          <div class="universal-container">
+              <label>Email Address<span class="span-container"> * </span>
+                <div>
+                    <input class="input-container" type="text" name="nume">
+                </div>
+              </label>
+          </div>
+  
+          <fieldset class="universal-container">
+              <legend>Query type <span class="span-container"> * </span></legend>
+          
+              <div class="query-type-options universal-container">
+                  <div class="query-type-option-container">
+                      <input type="radio" id="kraken" name="monster" value="K" />
+                      <label for="kraken">General Enquiry</label>
+                  </div>
+      
+                  <div class="query-type-option-container universal-container">
+                      <input type="radio" id="sasquatch" name="monster" value="S" />
+                      <label for="sasquatch">Support Request</label>
+                  </div>
+              </div>
+            </fieldset>
+  
+          <div class="universal-container">
+              <label>Message<span class="span-container"> * </span>
+                <div>
+                    <input class="message-input-container" type="text" name="nume">
+                </div>
+              </label>
+          </div>
+  
+          <div class="universal-container last-container">
+              <input class="last-input-container" type="checkbox" />
+              <p>I consent to being contacted by the team <span class="span-container"> * </span> </p>
+          </div>
+  
+          <button class="button-class universal-container">Submit</button>
+  
+      </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
