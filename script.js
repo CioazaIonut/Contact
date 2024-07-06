@@ -1,7 +1,17 @@
 const buton = document.querySelector(".button-class");
 
+const buttonClean = document.querySelector(".button-class-clean");
+
 
 const singurulButon = () => {
+
+
+}
+
+buton.addEventListener("click",singurulButon);
+
+
+const butonsCleanAll = () => {
 
 
 }

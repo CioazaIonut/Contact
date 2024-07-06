@@ -50,7 +50,21 @@ body {
 
     border-radius: 4px;
     cursor: pointer;
+}
 
+.button-class-clean{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--red); 
+    color: var(--white);
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 40%;
+    padding-right: 40%;
+
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .universal-container{
