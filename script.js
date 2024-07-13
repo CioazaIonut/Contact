@@ -12,7 +12,7 @@ buton.addEventListener("click",singurulButon);
 
 
 const butonsCleanAll = () => {
-
+    
 
 }
 
@@ -22,8 +22,9 @@ buton.addEventListener("click",singurulButon);
 
 
 /* 
-de facut partea de mobil la design          Facut
-de facut design-ul
-culorile cu litere mici                     Facut
-
+colturile mai rotunjite   
+spatierea trebuie refacuta 
+la mesage de folosit taxtarea            
+checkbox trebuie marit 
+butoanele redimensionate
 */
