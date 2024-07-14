@@ -29,6 +29,10 @@ body {
     border-radius: 8px;
 }
 
+.name-container{
+    flex: 1;
+}
+
 .first{
     
     font-size: 16px;
@@ -36,6 +40,7 @@ body {
 
 .last{
     margin-top: 20px;
+    flex: 1;
 }
 
 .button-class{
@@ -46,23 +51,8 @@ body {
 
     padding-top: 18px;
     padding-bottom: 18px;
-    padding-left: 40%;
-    padding-right: 40%;
 
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.button-class-clean{
-    font-size: 16px;
-    font-weight: 500;
-    background-color: var(--red); 
-    color: var(--white);
-
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 40%;
-    padding-right: 40%;
+    width: 100%;
 
     border-radius: 4px;
     cursor: pointer;
@@ -73,8 +63,8 @@ body {
 
     padding-top: 18px;
     padding-bottom: 18px;
-    padding-left: 40%;
-    padding-right: 40%;
+
+    width: 100%;
 
     border-radius: 4px;
     cursor: pointer;
@@ -131,12 +121,7 @@ body {
 }
 
  /*--- Query Type --- */
-/*
-.query-type-options {
-    display: flex;
-    gap: 32px;
-}
-    */
+    
 
 .query-type-option-container {
     border: 1px solid var(--grey-darker);    
@@ -153,20 +138,54 @@ body {
     display: flex;
 }
 
-@media (min-width: 500px) {
-    .section-container{
-        max-width: 400px;
+. .section-container{
+    padding: 16px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eroare-input{
+    display: none;
+    color: var(--red);
+}
+
+.eroare-input-second{
+    display: none;
+    color: var(--red);
+}
+
+.eroare-email{
+    display: none;
+    color: var(--red);
+}
+
+.eroare-message{
+    display: none;
+    color: var(--red);
+}
+
+@media (min-width: 600px) {
+    .first{
+        display: flex;
+        gap: 16px;
+    }
+    .last{
+        margin-top: 0px;
+    }
+
+    .query-type-options {
+        display: flex;
+        gap: 32px;
     }
 }
 
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     .pc-containter{
         display: flex;
     }
 
-    .section-container{
-        max-width: 1024px;
-    }
+   
 
     .universal-container{
         display: flex;
@@ -200,4 +219,4 @@ body {
         margin-left: 28px;
     }
 
-}
+}*/

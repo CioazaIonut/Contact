@@ -1,3 +1,50 @@
+// ----- Contact Form -----
+const contactForm = document.querySelector('.contact-form');
+
+const inputFirstName = document.querySelector('.input-first-name');
+const eroareInputFirstName = document.querySelector('.eroare-input-first-name');
+
+const inputSecondName = document.querySelector('.eroare-input-second');
+const eroareInputSecondName = document.querySelector('.eroare-input-second-name');
+
+const inputEmail = document.querySelector('.eroare-email');
+const eroareEmailName = document.querySelector('.eroare-email-name');
+
+const inputMesage = document.querySelector('.eroare-message');
+const eroareMesageName = document.querySelector('.eroare-message-name');
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (inputFirstName.value.length === 0) {
+        eroareInputFirstName.style.display = 'block';
+    } else {
+        eroareInputFirstName.style.display = 'none';
+    }
+
+    if (inputSecondName.value.length === 0) {
+        eroareInputSecondName.style.display = 'block';
+    } else {
+        eroareInputSecondName.style.display = 'none';
+    }
+
+    if (inputEmail.value.length === 0) {
+        eroareEmailName.style.display = 'block';
+    } else {
+        eroareEmailName.style.display = 'none';
+    }
+
+    if (inputMesage.value.length === 0) {
+        eroareMesageName.style.display = 'block';
+    } else {
+        eroareMesageName.style.display = 'none';
+    }
+};
+
+contactForm.addEventListener('submit', handleSubmit);
+
+
+//-----------
 const buton = document.querySelector(".button-class");
 
 const buttonClean = document.querySelector(".button-class-clean");
@@ -22,9 +69,5 @@ buton.addEventListener("click",singurulButon);
 
 
 /* 
-colturile mai rotunjite   
-spatierea trebuie refacuta 
-la mesage de folosit taxtarea            
-checkbox trebuie marit 
-butoanele redimensionate
+                                                   Tema
 */
