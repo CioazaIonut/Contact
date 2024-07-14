@@ -160,6 +160,11 @@ body {
     color: var(--red);
 }
 
+.eroare-query{
+    display: none;
+    color: var(--red);
+}
+
 .eroare-message{
     display: none;
     color: var(--red);

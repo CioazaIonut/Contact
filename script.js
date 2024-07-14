@@ -4,13 +4,16 @@ const contactForm = document.querySelector('.contact-form');
 const inputFirstName = document.querySelector('.input-first-name');
 const eroareInputFirstName = document.querySelector('.eroare-input-first-name');
 
-const inputSecondName = document.querySelector('.eroare-input-second');
+const inputSecondName = document.querySelector('.second-first-name');
 const eroareInputSecondName = document.querySelector('.eroare-input-second-name');
 
-const inputEmail = document.querySelector('.eroare-email');
+const inputEmail = document.querySelector('.email-name');
 const eroareEmailName = document.querySelector('.eroare-email-name');
 
-const inputMesage = document.querySelector('.eroare-message');
+const inputQuery = document.querySelector('.query-name');
+const eroareQuery = document.querySelector('.eroare-email-name');
+
+const inputMesage = document.querySelector('.mesage-name');
 const eroareMesageName = document.querySelector('.eroare-message-name');
 
 const handleSubmit = (e) => {
@@ -38,6 +41,12 @@ const handleSubmit = (e) => {
         eroareMesageName.style.display = 'block';
     } else {
         eroareMesageName.style.display = 'none';
+    }
+
+    if (inputQuery.value.length === 0) {
+        eroareQuery.style.display = 'block';
+    } else {
+        eroareQuery.style.display = 'none';
     }
 };
 
