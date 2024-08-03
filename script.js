@@ -10,11 +10,24 @@ const eroareInputSecondName = document.querySelector('.eroare-input-second-name'
 const inputEmail = document.querySelector('.email-name');
 const eroareEmailName = document.querySelector('.eroare-email-name');
 
-const inputQuery = document.querySelector('.query-name');
-const eroareQuery = document.querySelector('.eroare-email-name');
+const generalEnquiryInput = document.querySelector('.general-enquiry-input');
+const supportRequestInput = document.querySelector('.support-request-input');
+const eroareQueryFieldset = document.querySelector('.eroare-query-fieldset');
 
 const inputMesage = document.querySelector('.mesage-name');
 const eroareMesageName = document.querySelector('.eroare-message-name');
+
+const checkboxInput = document.querySelector('.last-input-container');
+const eroareCheckboxInput = document.querySelector('.eroare-checkbox-consent');
+
+const checkboxInputDoi = document.querySelector('.last-input-container-doi');
+const eroareCheckboxInputDoi = document.querySelector('.eroare-checkbox-consent-doi');
+
+const primaPagina = document.querySelector(".prima-pagina");
+const aDouaPagina = document.querySelector(".second-page");
+const butonNext = document.querySelector(".button-next");
+const continutDoi = document.querySelector(".second-page-container");
+const buttonReset = document.querySelector(".button-reset-secound-page");
 
 const handleSubmit = (e) => {
     e.preventDefault();
@@ -43,10 +56,22 @@ const handleSubmit = (e) => {
         eroareMesageName.style.display = 'none';
     }
 
-    if (inputQuery.value.length === 0) {
-        eroareQuery.style.display = 'block';
+    if (generalEnquiryInput.checked === false && supportRequestInput.checked === false) {
+        eroareQueryFieldset.style.display = 'block';
     } else {
-        eroareQuery.style.display = 'none';
+        eroareQueryFieldset.style.display = 'none';
+    }
+
+    if (checkboxInput.checked === false) {
+        eroareCheckboxInput.style.display = 'block';
+    } else {
+        eroareCheckboxInputDoi.style.display = 'none';
+    }
+
+    if (checkboxInputDoi.checked === false) {
+        eroareCheckboxInputDoi.style.display = 'block';
+    } else {
+        eroareCheckboxInputDoi.style.display = 'none';
     }
 };
 
@@ -54,29 +79,53 @@ contactForm.addEventListener('submit', handleSubmit);
 
 
 //-----------
-const buton = document.querySelector(".button-class");
+const buttonClean = document.querySelector(".button-class-clean-disabled");
 
-const buttonClean = document.querySelector(".button-class-clean");
+const resetareFormular = () => {
+    inputFirstName.value = "";
+    inputSecondName.value = "";
+    inputEmail.value = "";
+    inputMesage.value = "";
 
-
-const singurulButon = () => {
-
-
+    document.getElementById('radio1').checked = false;
+    document.getElementById('radio2').checked = false;
 }
 
-buton.addEventListener("click",singurulButon);
+buttonClean.addEventListener("click", resetareFormular);
 
+//alert("Oare functioneaza?")
 
-const butonsCleanAll = () => {
+/* Buton pagina 2*/
+
+const goToNextStep = () => {
+const selectedButton = document.querySelector(".second-page");
+
+if (selectedButton === null) {
+    alert("Please select a rate");
+} else {
+    primaPagina.style.display = 'none';
+    aDouaPagina.style.display = 'block';
+
+    continutDoi.innerText = selectedButton.innerText;
+}
+}
+
+butonNext.addEventListener("click", goToNextStep);
+
+/* buton reset pagina 2 */
+
+const resetButtonPasDoi = () => {
+    primaPagina.style.display = 'block';
+    aDouaPagina.style.display = 'none';
+    butonNext.classList.remove("active-button")
     
 
 }
 
-buton.addEventListener("click",singurulButon);
-
-//alert("Oare functioneaza?")
+buttonReset.addEventListener("click",resetButtonPasDoi);
 
 
 /* 
                                                    Tema
+
 */

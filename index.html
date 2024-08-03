@@ -10,81 +10,113 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section class="section-container">
+    <!-- Prima pagina -->
+    <section class="section-container prima-pagina">
         <form class="table-container contact-form">
-  
-          <h1 class="pc-universal-container">Contact Us</h1>
-  
-          <div class="first universal-container">
 
-            <div class="name-container pc-query-type-option-container">
-                <label class="label-container">First Name<span class="span-container"> * </span> </label>
+            <h1 class="pc-universal-container">Contact Us</h1>
+
+            <div class="first universal-container">
+
+                <div class="name-container pc-query-type-option-container">
+                    <label class="label-container">First Name<span class="span-container"> * </span> </label>
                     <div class="pc-universal-container">
-                        <input class="margin-small input-container pc-input-container input-first-name" type="text" name="nume">
-                        <p class="eroare-input eroare-input-first-name"> This field is required </p>
+                        <input class="margin-small input-container pc-input-container input-first-name" type="text"
+                            name="nume">
+                        <p class="eroare-input eroare-input-first-name margin-top-eror"> This field is required </p>
                     </div>
-            </div>
-              
-            <div class="last pc-query-type-option-container">
-                <label class="label-container universal-container">Last Name<span class="span-container"> * </span> </label>
+                </div>
+
+                <div class="last pc-query-type-option-container">
+                    <label class="label-container universal-container">Last Name<span class="span-container"> * </span>
+                    </label>
                     <div class="pc-universal-container">
-                        <input class="margin-small input-container pc-input-container second-first-name" type="text" name="nume">
-                        <p class="eroare-input-second eroare-input-second-name"> This field is required </p>
+                        <input class="margin-small input-container pc-input-container second-first-name" type="text"
+                            name="nume">
+                        <p class="eroare-input-second eroare-input-second-name margin-top-eror"> This field is required </p>
                     </div>
-                    
+
+                </div>
+
             </div>
 
-          </div>
-  
-          <div class="universal-container">
-              <label class="label-container universal-container">Email Address<span class="span-container"> * </span> </label>
+            <div class="universal-container">
+                <label class="label-container universal-container">Email Address<span class="span-container"> * </span>
+                </label>
                 <div class="pc-universal-container">
                     <input class="margin-small input-container pc-input-container email-name" type="text" name="nume">
-                    <p class="eroare-email eroare-email-name"> This field is required </p>
+                    <p class="eroare-email eroare-email-name margin-top-eror"> This field is required </p>
                 </div>
-          </div>
-  
-          <fieldset class="universal-container">
-              <legend class="label-container query-name">Query type <span class="span-container"> * </span></legend>
+            </div>
 
-              <div class="pc-query-type-option-container">
-                <div class="query-type-options pc-query-type-option-container">
-                    <div class="query-type-option-container pc-query-type-option-container universal-container">
-                        <input type="radio" id="kraken" name="monster" value="K" />
-                        <label class="label-container" for="kraken">General Enquiry</label>
-                        
-                    </div>
-        
-                    <div class="query-type-option-container universal-container">
-                        <input type="radio" id="sasquatch" name="monster" value="S" />
-                        <label class="label-container" for="sasquatch">Support Request</label>
-                        
+            <fieldset class="universal-container query-fieldset">
+                <legend class="label-container query-name">Query type <span class="span-container"> * </span></legend>
+
+                <div class="pc-query-type-option-container">
+                    <div class="query-type-options pc-query-type-option-container">
+                        <div class="query-type-option-container pc-query-type-option-container universal-container">
+                            <input type="radio" id="kraken" name="monster" value="K" class="general-enquiry-input" />
+                            <label class="label-container" for="kraken">General Enquiry</label>
+                        </div>
+
+                        <div class="query-type-option-container universal-container">
+                            <input type="radio" id="sasquatch" name="monster" value="S" class="support-request-input" />
+                            <label class="label-container" for="sasquatch">Support Request</label>
+                        </div>
                     </div>
                 </div>
-              </div>
+                <p class="eroare-query-fieldset margin-top-eror"> This field is required </p>
 
             </fieldset>
-  
-          <div class="universal-container">
-              <label class="label-container">Message<span class="span-container"> * </span> </label>
+
+            <div class="universal-container">
+                <label class="label-container">Message<span class="span-container"> * </span> </label>
                 <div>
                     <textarea class="universal-container message-input-container pc-message-input-container mesage-name"
-                    type="text" name="nume" rows="6"></textarea>
-                    <p class="eroare-message eroare-message-name"> This field is required </p>
+                        type="text" name="nume" rows="6"></textarea>
+                    <p class="eroare-message eroare-message-name margin-top-eror"> This field is required </p>
                 </div>
-          </div>
-  
-          <div class="universal-container last-container">
-              <input class="last-input-container " type="checkbox" />
-              <p>I consent to being contacted by the team <span class="span-container"> * </span> </p>
-          </div>
-  
-          <button class="button-class universal-container pc-button-class">Submit</button>
+            </div>
 
-          <button class="button-class-clean-disabled universal-container pc-button-class" type="button" disabled>Clean All</button>
-  
+            <div class="universal-container last-container">
+                <input class="last-input-container" type="checkbox" id="radio1"/>
+                <p>I consent to being contacted by the team <span class="span-container"> * </span> </p>
+            </div>
+            <p class="eroare-checkbox-consent margin-top-eror"> This field is required </p>
+
+            <div class="universal-container last-container">
+                <input class="last-input-container-doi" type="checkbox" id="radio2"/>
+                <p>I agree to receive email notifications <span class="span-container"> * </span> </p>
+            </div>
+            <p class="eroare-checkbox-consent margin-top-eror"> Tick them off your list</p>
+
+            <button class="button-class universal-container pc-button-class">Submit</button>
+
+            <button class="button-class-clean-disabled universal-container pc-button-class" type="button">Clean
+                All</button>
+
+                <div>
+                    <button class="button-next">Next page</button>
+                </div>
+
+        </form>
+
+    </section>
+
+    <!-- A doua pagina -->
+    <section class="section-container second-page">
+        <form class="table-container second-page-container">
+            <div>
+
+            </div>
+            
+            <div>
+                <button class="button-reset-secound-page">First Page</button>
+            </div>
         </form>
     </section>
+
+    
     <script src="./script.js"></script>
 </body>
 </html>
