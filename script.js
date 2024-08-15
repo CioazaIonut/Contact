@@ -107,11 +107,14 @@ const resetareFormular = () => {
     inputSecondName.value = "";
     inputEmail.value = "";
     inputMesage.value = "";
-    if (generalEnquiryInput && supportRequestInput).value = ""; // butonul "Clean all" trebuie sa reseteze si sectiunea "Query type"
-    
 
     document.getElementById('radio1').checked = false;
     document.getElementById('radio2').checked = false;
+
+    document.getElementById('general-enquiry').checked = false;
+    document.getElementById('support-request').checked = false;
+
+    document.getElementById('zodiac').value = 'aries';
 }
 
 buttonClean.addEventListener("click", resetareFormular);
@@ -134,8 +137,7 @@ buttonReset.addEventListener("click",resetButtonPasDoi);
 
 /* 
                                                    Tema
-1 butonul "Clean all" trebuie sa reseteze si sectiunea "Query type"  ---Am incercat dar nu reusesc
-2 butonul "Clean all" odata apasat trebuie sa ascunda si erorile de sub inputuri
-3 de facut zodiile pe prima pagina cu select html       -----------facut-------
+1 de stilizat select-ul ( de aplicat un border, de rotunjit colturile, de marit font-size-ul textului )
+2 pasul de pe formular
 
 */

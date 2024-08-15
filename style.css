@@ -54,8 +54,11 @@
   
     width: 100%;
   
-    border-radius: 4px;
+    border-radius: 16px;
     cursor: pointer;
+
+    font-size: 30px;
+    border: black;
   }
   
   .button-class-clean {
@@ -66,10 +69,12 @@
   
     width: 100%;
   
-    border-radius: 4px;
+    border-radius: 16px;
     cursor: pointer;
   
     opacity: 1;
+
+    font-size: 30px;
   }
   
   .universal-container {
@@ -216,8 +221,8 @@
 .button-reset-secound-page{
   margin-top: 16px;
 
-  background-color: var(--grey-darker);
-  color: var(--red);
+  background-color: transparent;
+  color: black;
 
   padding-top: 4px;
   padding-bottom: 4px;
@@ -226,4 +231,12 @@
 
   border-radius: 4px;
   cursor: pointer;
+}
+
+.center-the-page{
+  text-align: center;
+}
+
+.margin-top{
+  margin-top: 12px;
 }
