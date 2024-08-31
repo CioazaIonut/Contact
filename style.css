@@ -1,10 +1,10 @@
 :root {
-    --green-lighter: hsl(148, 38%, 91%);
-    --green-medium: hsl(169, 82%, 27%);
-    --red: hsl(0, 66%, 54%);
-    --white: hsl(0, 0%, 100%);
-    --grey-medium: hsl(186, 15%, 59%);
-    --grey-darker: hsl(187, 24%, 22%);
+    --green-lighter: #dff1e7;
+    --green-medium: #0c7d69;
+    --red: #d73c3c;
+    --white: 	#ffffff;
+    --grey-medium: #87a3a6;
+    --grey-darker: #2b4246;
   }
   
   * {
