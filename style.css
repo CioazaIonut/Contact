@@ -57,7 +57,7 @@
     border-radius: 16px;
     cursor: pointer;
 
-    font-size: 30px;
+    font-size: 20px;
     border: black;
   }
   
@@ -74,7 +74,7 @@
   
     opacity: 1;
 
-    font-size: 30px;
+    font-size: 20px;
   }
   
   .universal-container {

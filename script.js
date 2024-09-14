@@ -137,7 +137,7 @@ buttonReset.addEventListener("click",resetButtonPasDoi);
 
 /* 
                                                    Tema
-1 de stilizat select-ul ( de aplicat un border, de rotunjit colturile, de marit font-size-ul textului )
-2 pasul de pe formular
+1 butoanele mai mici (scrisul)
+2 de schimbat imaginea la pasul 2 la buronul de back
 
 */
